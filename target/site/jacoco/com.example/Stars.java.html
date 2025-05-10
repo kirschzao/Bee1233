@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Stars.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demo</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">Stars.java</span></div><h1>Stars.java</h1><pre class="source lang-java linenums">package com.example;
+
+<span class="fc" id="L3">public class Stars {</span>
+
+    public int countFullStars(int n) {
+<span class="fc" id="L6">        int fullStars = 0;</span>
+
+<span class="fc bfc" id="L8" title="All 2 branches covered.">        for (int k = 1; k &lt; n; k++) {</span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">            if (gcd(n, k) == 1) {</span>
+<span class="fc" id="L10">                fullStars++;</span>
+            }
+        }
+
+<span class="fc" id="L14">        return fullStars/2;</span>
+    }
+
+    private int gcd(int a, int b) {
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        while (b != 0) {</span>
+<span class="fc" id="L19">            int temp = b;</span>
+<span class="fc" id="L20">            b = a % b;</span>
+<span class="fc" id="L21">            a = temp;</span>
+<span class="fc" id="L22">        }</span>
+<span class="fc" id="L23">        return a;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
