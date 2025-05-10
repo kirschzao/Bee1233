@@ -1,0 +1,1 @@
+apagou teus ngc
