@@ -1,3 +1,5 @@
+# T1 - Verificação e Validação de Software
+
 ## Tecnologias
 
 - Java
@@ -14,13 +16,20 @@
     - Números ímpares
     - Números grandes
     - Números pequenos
+      - Código original: Calcula corretamente o número de estrelas completas independente da partição do número de pontos.
+      - Código com falha: Adicionamos uma condição que retorna `0` estrelas quando os pontos são menores que 10, mesmo que já seja suficiente para formar uma estrela.
+      - Resultado esperado: O teste para essa partição deve falhar, provando que o teste cobre corretamente o caso de números pequenos.
   - **Valor limite**
-    - Números menores que 3
-    - Números maiores que 2147483647
+    - Número igual a 3
+      - Código original: Retorna `1` estrela completa, ao receber a entrada n = 3.
+      - Código com falha: Código aceita apenas valores maiores que 3, resultando em um lançamento de erro.
+      - Resultado esperado: O teste para esse valor limite deve falhar, provando que o teste cobre corretamente o caso de valor limite
+    - Números igual a 2147483647
   - **Cobertura de código**
     - Juntando todos os casos de teste, conseguimos atingir 100% de cobertura de código.
-  - **Contratos**
-    - O código foi escrito com base em contratos, o que garante que o código não falhe em nenhum momento.
+      - Código com falha: Se utilizarmos somente o teste com `n = 3`, o teste não percorre 100% do código
+  - **Contrato**
+    - Fizemos testes de pré-condição e pós-condição, para garantir a consistência do código.
 
 ## Testes
 
