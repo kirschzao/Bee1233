@@ -1,26 +1,25 @@
 ## Tecnologias
 
-- Java  
-- Maven  
-- JUnit  
-- JaCoCo  
+- Java
+- Maven
+- JUnit
+- JaCoCo
 
 ## Técnicas
 
 - **Testes de unidade**
-  - Partições:
+  - **Partições**
     - Números primos
     - Números pares
     - Números ímpares
     - Números grandes
-    - Números pequenos  
-
-  - Valor limite:
+    - Números pequenos
+  - **Valor limite**
     - Números menores que 3
     - Números maiores que 2147483647
-  - Cobertura de código:
+  - **Cobertura de código**
     - Juntando todos os casos de teste, conseguimos atingir 100% de cobertura de código.
-  - Contratos:
+  - **Contratos**
     - O código foi escrito com base em contratos, o que garante que o código não falhe em nenhum momento.
 
 ## Testes
