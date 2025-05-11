@@ -1,39 +1,52 @@
 package com.example;
 
-public class Stars {
+import java.util.ArrayList;
 
-    public int countFullStars(int n) {
-        // Verifica se n é menor que 3
-        if (n < 3) {
-            throw new IllegalArgumentException("n precisa ser maior ou igual a 3");
-        }
+public class Stars {
     
-        // Verifica se n é maior que 2147483647
-        if(n > 2147483647) {
-            throw new IllegalArgumentException("n precisa ser menor ou igual a 2147483647");
+    public int countFullStars(int n){
+        // Verifica se n é menor que 3
+        if(n < 3){
+            throw new IllegalArgumentException("n deve ser maior que 3");
         }
-        
+        // Verifica se n é maior que 2147483647
+        if(n > 2147483647){
+            throw new IllegalArgumentException("n deve ser menor que 2147483647");
+        }
+
         int fullStars = 0;
-        // Calcula o número de estrelas cheias
-        // O número de estrelas cheias é igual ao número de inteiros k entre 1 e n-1
-        // que são coprimos com n, ou seja, gcd(n, k) = 1
-        // Dividimos o resultado por 2, pois segundo os resultados do BeeCrowd assim está certo
-        for (int k = 1; k < n; k++) {
-            if (mdc(n, k) == 1) {
-                fullStars++;
+        ArrayList<Integer> divisorsOfN = new ArrayList<>();
+
+        // Adiciona os divisores de n a uma lista
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                divisorsOfN.add(i);
             }
         }
         
-        return fullStars/2;
-    }
-    
-    // Método para calcular o máximo divisor comum (mdc) entre dois números
-    private int mdc(int a, int b) {
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
+        // Verifica quais "k" são estrelas completas iniciando de 2
+        for(int i = 2; i<=n/2; i++){
+            boolean newStar = true;
+            // Percorre a lista de divisores de n
+            for(int j = 0; j<divisorsOfN.size(); j++){
+                // Verifica se o número é divisor de n
+                if(divisorsOfN.contains(i)){
+                    newStar = false;
+                    break;
+                }
+                // Verifica se o número é múltiplo de algum divisor de n
+                if(i % divisorsOfN.get(j) == 0){
+                    newStar = false;
+                    break;
+                }
+            }
+            // Se o número não é divisor de n e não é múltiplo de nenhum divisor de n, é uma estrela completa
+            // Adiciona 1 ao contador de estrelas completas
+            if(newStar){
+                fullStars++;
+            }
         }
-        return a;
+        // Retorna o número de estrelas completas + 1 que sempre é uma estrela completa
+        return fullStars + 1;
     }
 }
