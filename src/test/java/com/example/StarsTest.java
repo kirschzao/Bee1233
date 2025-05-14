@@ -25,7 +25,7 @@ public class StarsTest {
     // partição: numero impar
     @Test
     public void testOddN() {
-        assertEquals(3, stars.countFullStars(18));
+        assertEquals(4, stars.countFullStars(15));
     }
 
     // partição: numero grande
@@ -74,6 +74,9 @@ public class StarsTest {
        for(int n = 3; n <= 100; n++){
         int fullStars = stars.countFullStars(n);
         assertTrue(fullStars <= n/2);
+        if((fullStars <= n/2)){
+            System.out.println("fullStars: " + fullStars + " n: " + n);
        }
     }
+}
 }

@@ -52,7 +52,8 @@
       ```java
       for(int i = 2; i <= n; i++)
       ```
-      isso resultaria no ferimento do pós-contrato *fullstarts <= n/2*, pois em diversos casos
+      isso resultaria no ferimento do pós-contrato **fullstarts <= n/2**
+      , pois em alguns casos (números primos) teremos que **fullstars > n/2**, como, por exemplo, se a entrada for *19* o número de fullstars seria *19*.
 
 ## Testes
 
