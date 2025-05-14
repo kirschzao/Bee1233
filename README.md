@@ -21,16 +21,38 @@
   - **Partições**
     - Números primos
     - Números pares
+      - Falha proposital inserida: lógica de cálculo diferente caso n for par.
+      ```java
+      if(n % 2 == 0){
+        return n / 2;
+      }
+      ```
     - Números ímpares
     - Números grandes
     - Números pequenos
   - **Valor limite**
-    - Número igual a 3
-    - Números igual a 2147483647
+    - Inferior: número igual a 3
+      - Falha proposital inserida: mudando o limite inferior para 1, ou seja, aceita entrada 1 e 2, as quais não devem ser aceitas.
+      ```java
+      if(n < 1){
+        throw new IllegalArgumentException("n deve ser maior que 0");
+      }
+      ```
+    - Superior: número igual a 2147483647
   - **Cobertura de código**
     - Juntando todos os casos de teste, conseguimos atingir 100% de cobertura de código.
+      - Falha proposital: caso excluirmos o teste de limite superior, 10% código (3 linhas de código) não será testado. Resultando em uma falha de cobertura de código.
   - **Contrato**
     - Fizemos testes de pré-condição e pós-condição, para garantir a consistência do código.
+      - Falha proposital: caso alterassemos a quantidade de vezes que o loop principal para contar estrelas acontece, mudando de:
+      ```java
+      for(int i = 2; i<=n/2; i++)
+      ```
+      para:
+      ```java
+      for(int i = 2; i <= n; i++)
+      ```
+      isso resultaria no ferimento do pós-contrato *fullstarts <= n/2*, pois em diversos casos
 
 ## Testes
 
