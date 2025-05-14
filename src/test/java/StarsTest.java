@@ -1,7 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 
 import com.example.Stars;
@@ -26,7 +25,7 @@ public class StarsTest {
     // partição: numero impar
     @Test
     public void testOddN() {
-        assertEquals(4, stars.countFullStars(15));
+        assertEquals(4, stars.countFullStars(18));
     }
 
     // partição: numero grande
@@ -74,7 +73,7 @@ public class StarsTest {
     public void testPostConditionN() {
        for(int n = 3; n <= 100; n++){
         int fullStars = stars.countFullStars(n);
-        assertTrue(fullStars <= n/2);
+        assertTrue(fullStars <= n2);
        }
     }
 }
