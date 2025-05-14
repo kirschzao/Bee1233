@@ -1,5 +1,7 @@
 # T1 - Verificação e Validação de Software
 
+descrição: O trabalho teve como objetivo principal a implementação da solução para um problema da plataforma BeeCrowd, com foco na aplicação de técnicas de teste de código. A atividade envolveu não apenas a resolução do problema proposto, mas também a elaboração e execução de casos de testes unitários, visando garantir a correção, robustez e confiabilidade do código desenvolvido.
+
 ## Tecnologias
 
 - Java
