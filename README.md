@@ -46,7 +46,7 @@ O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número `N`, qua
 
 #### 🔹 Cobertura de Código
 
-- Com todos os testes, atingimos **100% de cobertura**.
+- Com todos os testes, atingimos **100% de cobertura**, o que pode ser visualizado abrindo o relatório de cobertura (instruções abaixo).
   - 💥 _Falha proposital:_ se o teste de limite superior for removido, **10% do código** (3 linhas) deixa de ser testado.
 
 #### 🔹 Contrato
@@ -66,4 +66,35 @@ O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número `N`, qua
 ## Testes
 
 Executamos 10 testes unitários, cobrindo todos os aspectos possíveis do código.  
-Todos apresentaram resultados conforme o esperado; consequentemente, todos foram bem-sucedidos.
+Todos apresentaram resultados conforme o esperado, consequentemente, todos foram bem-sucedidos.
+
+### Abrindo projeto
+
+...
+
+### Executando os testes:
+
+Certifique-se de estar na pasta `demo` e execute o comando no terminal:
+
+```bash
+mvn clean verify
+```
+
+Após isso, o Maven vai:
+- Compilar o projeto;
+- Executar os testes unitários;
+- Gerar o relatório de cobertura de código;
+
+### Relatório de cobertura
+
+  Para abrir o relatório de cobertura você deve:
+  1. Instalar a extensão `Live Server`;
+  2. Entrar no arquivo 
+  ```
+  target/site/jacoco/index.html
+  ```
+  3. Clique com o botão direito no arquivo e selecione a opção `Open with Live Server`
+
+## Resultados
+
+  Os resultados podem ser vistos na aba `Issues` do repositório no GitHub  
