@@ -2,11 +2,11 @@
 
 ### Descrição:
 
- O trabalho teve como objetivo principal a implementação da solução para um problema da plataforma BeeCrowd, com foco na aplicação de técnicas de teste de código. A atividade envolveu não apenas a resolução do problema proposto, mas também a elaboração e execução de casos de testes unitários, visando garantir a correção, robustez e confiabilidade do código desenvolvido.
+  O trabalho teve como objetivo principal a implementação da solução para um problema da plataforma BeeCrowd, com foco na aplicação de técnicas de teste de código. A atividade envolveu não apenas a resolução do problema proposto, mas também a elaboração e execução de casos de testes unitários, visando garantir a correção, robustez e confiabilidade do código desenvolvido.
 
 ### Problema BeeCrowd:
 
- O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número N, quantas estrelas completas podem ser desenhadas ao ligar cada ponto em uma circunferência ao k-ésimo ponto seguinte, repetidamente, até retornar ao ponto inicial. Uma estrela é considerada completa quando todos os N pontos são visitados no processo. 
+  O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número N, quantas estrelas completas podem ser desenhadas ao ligar cada ponto em uma circunferência ao k-ésimo ponto seguinte, repetidamente, até retornar ao ponto inicial. Uma estrela é considerada completa quando todos os N pontos são visitados no processo. 
 
 ## Tecnologias
 
