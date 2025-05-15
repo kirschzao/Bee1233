@@ -4,16 +4,19 @@
 
 O trabalho teve como objetivo principal a implementação da solução para um problema da plataforma BeeCrowd, com foco na aplicação de diversas técnicas de teste de código. A atividade envolveu não apenas a resolução do problema proposto, mas também a elaboração e execução de casos de testes unitários, garantindo a correção, robustez e confiabilidade do código desenvolvido.
 
-### Problema BeeCrowd
+### 🐝 Problema BeeCrowd
 
 O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número `N`, quantas estrelas completas podem ser desenhadas ligando cada ponto ao k-ésimo ponto seguinte em uma circunferência, repetidamente, até retornar ao ponto inicial. Uma estrela é considerada completa quando todos os `N` pontos são visitados no processo.
 
 ## Tecnologias
 
-- Java
-- Maven
-- JUnit
-- JaCoCo
+- Java: Linguagem de programação orientada a objetos amplamente utilizada para o desenvolvimento de aplicações robustas e multiplataforma.
+
+- Maven: Ferramenta de automação de build e gerenciamento de dependências para projetos Java, que facilita a compilação, testes e empacotamento.
+
+- JUnit: Framework de testes unitários para Java que permite escrever e executar testes automatizados para garantir a qualidade do código.
+
+- JaCoCo: Ferramenta de análise de cobertura de testes para Java que gera relatórios indicando quais partes do código foram testadas.
 
 ## Técnicas de Teste
 
@@ -68,11 +71,18 @@ O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número `N`, qua
 Executamos 10 testes unitários, cobrindo todos os aspectos possíveis do código.  
 Todos apresentaram resultados conforme o esperado, consequentemente, todos foram bem-sucedidos.
 
-### Abrindo projeto
+### 📦 Abrindo projeto
 
-...
+1. **Clone o repositório:**
 
-### Executando os testes:
+    ```bash
+    git clone https://github.com/kirschzao/Bee1233.git
+    cd Bee1233
+    ```
+    
+
+
+### 🚀 Executando os testes:
 
 Certifique-se de estar na pasta `demo` e execute o comando no terminal:
 
