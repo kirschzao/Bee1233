@@ -49,10 +49,10 @@ public class StarsTest {
     }
 
     // limite superior: n = 2147483647
-    /*@Test
+    @Test
     public void testUpperLimitN() {
         assertEquals(1073741823, stars.countFullStars(2147483647));
-    }*/
+    }
 
     // fora do domínio: n = 0
     @Test
