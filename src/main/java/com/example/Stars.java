@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Stars {
     
-    public int countFullStars(int n){
+    public int countFullStars(long n){
         if(n < 3){
             throw new IllegalArgumentException("n deve ser maior que 3");
         }
         if(n > 2147483647){
-            throw new IllegalArgumentException("n deve ser menor que 2147483647");
+            throw new IllegalArgumentException("n deve ser menor que 2147483648");
         }
 
         // FALHA PROPOSITAL - VALOR LIMITE INFERIOR

@@ -48,13 +48,13 @@ public class StarsTest {
         assertEquals(1, stars.countFullStars(3));
     }
 
-    // limite superior: n = 2147483647
+    // limite superior: n = 2147483648
     @Test
     public void testUpperLimitN() {
         assertEquals(1073741823, stars.countFullStars(2147483647));
     }
 
-    // fora do domínio: n = 0
+    // fora do domínio inferior: n = 0
     @Test
     public void testOutOfLimitN() {
         assertThrows(IllegalArgumentException.class, () -> stars.countFullStars(0));
@@ -65,7 +65,7 @@ public class StarsTest {
     @Test
     public void testPreConditionN() {
         assertThrows(IllegalArgumentException.class, () -> stars.countFullStars(2));
-        assertThrows(IllegalArgumentException.class, () -> stars.countFullStars(2147483647 + 1));
+        assertThrows(IllegalArgumentException.class, () -> stars.countFullStars(2147483648L));
     }
 
     // Pós-condição: fullStars <= n/2
