@@ -77,17 +77,22 @@ Todos apresentaram resultados conforme o esperado, consequentemente, todos foram
 
     ```bash
     git clone https://github.com/kirschzao/Bee1233.git
-    cd Bee1233
     ```
+
+2. **Entre no repositório:**
+
+  ```bash
+  cd .\Bee1233\
+  ```
     
 
 
 ### 🚀 Executando os testes:
 
-Certifique-se de estar na pasta `demo` e execute o comando no terminal:
+Certifique-se de estar na pasta `Bee1223` e execute o comando no terminal:
 
 ```bash
-mvn clean verify
+./mvnw clean verify
 ```
 
 Após isso, o Maven vai:
