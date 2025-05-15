@@ -103,12 +103,7 @@ Após isso, o Maven vai:
 
   Para abrir o relatório de cobertura você deve:
   1. Instalar a extensão `Live Server`;
-  2. Abrir a pasta do arquivo: 
-
-    ```
-    target/site/jacoco/index.html
-    ```
-    
+  2. Abrir a pasta do arquivo: `target/site/jacoco/index.html`
   3. Clique com o botão direito no arquivo e selecione a opção `Open with Live Server`
 
 ## Resultados
