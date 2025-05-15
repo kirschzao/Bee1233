@@ -8,6 +8,8 @@ O trabalho teve como objetivo principal a implementação da solução para um p
 
 O problema 1233 (estrela) do BeeCrowd exige determinar, dado um número `N`, quantas estrelas completas podem ser desenhadas ligando cada ponto ao k-ésimo ponto seguinte em uma circunferência, repetidamente, até retornar ao ponto inicial. Uma estrela é considerada completa quando todos os `N` pontos são visitados no processo.
 
+Enunciado disponível em: https://judge.beecrowd.com/en/problems/view/1233 
+
 ## Tecnologias
 
 - Java: Linguagem de programação orientada a objetos amplamente utilizada para o desenvolvimento de aplicações robustas e multiplataforma.
